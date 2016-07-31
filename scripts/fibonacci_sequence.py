@@ -32,12 +32,12 @@ def is_python3( version ):
 
 
 # Calculate the fibonacci number given an integer
-def fNumber( inputValue ):
+def fNumber_recur( inputValue ):
 
     if inputValue == 0:
         return 0
     elif inputValue == 1:
         return 1
     else:
-        fibonacci_number = fNumber( inputValue - 1 ) + fNumber( inputValue - 2)
+        fibonacci_number = fNumber_recur( inputValue - 1 ) + fNumber_recur( inputValue - 2)
         return fibonacci_number
