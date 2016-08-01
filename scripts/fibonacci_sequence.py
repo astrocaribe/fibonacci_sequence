@@ -31,7 +31,7 @@ def is_python3( version ):
     return version > 2
 
 
-# Calculate the fibonacci number given an integer
+# Calculate the Fibonacci number given an integer, using a recursive function
 def fNumberRecursive( inputValue ):
 
     if inputValue == 0:
@@ -41,3 +41,17 @@ def fNumberRecursive( inputValue ):
     else:
         fibonacci_number = fNumberRecursive( inputValue - 1 ) + fNumberRecursive( inputValue - 2)
         return fibonacci_number
+
+
+# Calculate the Fibonacci number given an integer, using an iterative function
+def fNumberIterative( inputValue ):
+
+    fib0 = 0
+    fib1 = 1
+
+    for currentInt in range(0, inputValue):
+        tempValue = fib0
+        fib0 = fib1
+        fib1 = fib1 + tempValue
+
+    return fib0
