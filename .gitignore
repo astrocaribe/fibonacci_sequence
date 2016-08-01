@@ -1,7 +1,5 @@
 *.cache
 *.ipynb_checkpoints
-*.ipynb
 *.pyc
 scripts/*.pyc
-notebooks/*.ipynb
 notebooks/*.ipynb_checkpoints
